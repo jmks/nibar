@@ -1,7 +1,5 @@
 import DateTime from "./lib/DateTime.jsx";
 import Battery from "./lib/Battery.jsx";
-import Cpu from "./lib/Cpu.jsx";
-import Wifi from "./lib/Wifi.jsx";
 import Dnd from "./lib/Dnd.jsx";
 import Error from "./lib/Error.jsx";
 import parse from "./lib/parse.jsx";
@@ -38,11 +36,8 @@ export const render = ({ output }) => {
   }
   return (
     <div style={style}>
-      <Cpu output={data.cpu} />
-      <Wifi output={data.wifi} />
       <Battery output={data.battery} />
       <DateTime output={data.datetime} />
-      <Dnd output={data.dnd} />
     </div>
   );
 };
